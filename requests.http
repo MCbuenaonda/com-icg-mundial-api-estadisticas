@@ -1,0 +1,19 @@
+GET http://127.0.0.1:8100/test
+api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
+
+###
+GET http://127.0.0.1:8105/api/v1/pais/68bb9703033a4535ed96ccdb
+api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
+
+###
+GET http://127.0.0.1:8105/api/v1/jugador/68ed9d63d8343c17bb642a8c
+api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
+
+###
+GET http://127.0.0.1:8105/api/v1/ciudad/68f040bd2e186c7d22cd0bb8
+api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
+
+###
+GET http://127.0.0.1:8105/api/v1/confederacion/68bb97e4033a4535ed96cd6e
+api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
+
