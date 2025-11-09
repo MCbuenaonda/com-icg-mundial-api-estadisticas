@@ -2,15 +2,15 @@ GET http://127.0.0.1:8100/test
 api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
 
 ###
-GET http://127.0.0.1:8105/api/v1/pais/68bb9703033a4535ed96ccdb
+GET http://127.0.0.1:8105/api/v1/pais/68bb9703033a4535ed96cd19
 api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
 
 ###
-GET http://127.0.0.1:8105/api/v1/jugador/68ed9d63d8343c17bb642a8c
+GET http://127.0.0.1:8105/api/v1/jugador/68ed9d63d8343c17bb6424f2
 api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
 
 ###
-GET http://127.0.0.1:8105/api/v1/ciudad/68f040bd2e186c7d22cd0bb8
+GET http://127.0.0.1:8105/api/v1/ciudad/68f040bd2e186c7d22cd0bb6
 api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
 
 ###

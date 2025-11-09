@@ -18,8 +18,9 @@ def get_pais_detalle(id, logger):
         if not pais:
             logger.info(f"Coleccionable para el usuario {id} no encontrado. Creando nuevo coleccionable.")
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Pais no encontrado")
-        else:
-            pais = estadistica_util.convertir_objectid_a_string(pais)
+        
+        pais['partidos'] = list(db['historial'].find({"equipo_local": pais['nombre']})) + list(db['historial'].find({"equipo_visitante": pais['nombre']}))
+        pais = estadistica_util.convertir_objectid_a_string(pais)
         
         return pais              
     except GoogleAPIError as e:
@@ -35,11 +36,18 @@ def get_jugador_detalle(id, logger):
         logger.info(f"Consultando coleccionable para el usuario {id}")
         # Ejecutar la consulta
         jugador = collection.find_one({'_id': ObjectId(id)})
+        
         if not jugador:
             logger.info(f"Coleccionable para el usuario {id} no encontrado. Creando nuevo coleccionable.")
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Jugador no encontrado")
-        else:
-            jugador = estadistica_util.convertir_objectid_a_string(jugador)
+        
+        jugador['pais'] = db['paises'].find_one({'id': jugador['pais_id']})['nombre']
+        filtro_busqueda = {
+            "acciones.jugador": jugador['nombre'],
+            "acciones.equipo": jugador['pais']
+        }
+        jugador['partidos'] = list(db['historial'].find(filtro_busqueda))
+        jugador = estadistica_util.convertir_objectid_a_string(jugador)
         
         return jugador              
     except GoogleAPIError as e:
@@ -55,11 +63,14 @@ def get_ciudad_detalle(id, logger):
         logger.info(f"Consultando coleccionable para el usuario {id}")
         # Ejecutar la consulta
         ciudad = collection.find_one({'_id': ObjectId(id)})
+        
         if not ciudad:
             logger.info(f"Coleccionable para el usuario {id} no encontrado. Creando nuevo coleccionable.")
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Ciudad no encontrada")
-        else:
-            ciudad = estadistica_util.convertir_objectid_a_string(ciudad)
+        
+        ciudad['pais'] = db['paises'].find_one({'id': ciudad['pais_id']})['nombre']
+        ciudad['partidos'] = list(db['historial'].find({"ubicacion.id": ciudad['id']}))
+        ciudad = estadistica_util.convertir_objectid_a_string(ciudad)
         
         return ciudad              
     except GoogleAPIError as e:
