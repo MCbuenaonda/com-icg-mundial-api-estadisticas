@@ -2,5 +2,6 @@ from enum import Enum
 
 class NivelRareza(Enum):
     COMUN = "Común"
-    RARA = "Rara"
+    POCO_COMUN = "Poco común"
+    RARA = "Raro"
     EPICA = "Épica"

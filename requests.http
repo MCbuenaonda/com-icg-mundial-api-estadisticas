@@ -17,3 +17,7 @@ api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
 GET http://127.0.0.1:8105/api/v1/confederacion/68bb97e4033a4535ed96cd6e
 api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
 
+###
+GET http://127.0.0.1:8105/api/v1/torneo
+api-key: b480eab3-5544-4a6b-ae34-b5e7e93ead60
+

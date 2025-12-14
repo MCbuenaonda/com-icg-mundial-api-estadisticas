@@ -4,6 +4,9 @@ from pymongo.mongo_client import MongoClient
 from Utils import estadistica_util
 from Config.settings import MONGODB_URI
 from bson.objectid import ObjectId
+from datetime import datetime
+from collections import defaultdict
+from typing import List, Dict, Any
 
 client = MongoClient(MONGODB_URI)
 db = client['mundial'] 

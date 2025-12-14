@@ -1,0 +1,369 @@
+{
+  "torneo": "Mundial",
+  "total_partidos": 64,
+  "total_equipos": 32,
+  "total_goles": 172,
+  
+  "remontadas": {
+    "total_remontadas": 5,
+    "remontadas_2_goles": 3,
+    "remontadas_3_o_mas_goles": 2,
+    "equipos_con_mas_remontadas": [
+      {"equipo": "Brasil", "remontadas": 2},
+      {"equipo": "Francia", "remontadas": 1}
+    ],
+    "partidos": [
+      {
+        "partido_id": "abc123",
+        "equipo_local": "Brasil",
+        "equipo_visitante": "Argentina",
+        "goles_local": 4,
+        "goles_visitante": 3,
+        "ganador": "Brasil",
+        "equipo_remonto": "Brasil",
+        "diferencia_maxima": 2,
+        "marcador_inicial": "Perdía por 2 goles",
+        "marcador_final": "4-3",
+        "estadio": "Maracaná",
+        "ciudad": "Río de Janeiro"
+      }
+    ]
+  },
+  
+  "goleadores": {
+    "total_goles_torneo": 172,
+    "promedio_goles_partido": 2.69,
+    "goleador_maximo": {
+      "nombre": "Kylian Mbappé",
+      "pais": "Francia",
+      "goles_totales": 42,
+      "goles_torneo": 8,
+      "partidos_jugados": 7,
+      "promedio_goles": 1.14,
+      "overall": 91
+    },
+    "top_goleadores": []
+  },
+  
+  "mejores_jugadores": {
+    "criterio_evaluacion": "Overall, goles y rendimiento en el torneo",
+    "mejor_jugador_general": {
+      "nombre": "Lionel Messi",
+      "pais": "Argentina",
+      "overall": 93,
+      "goles": 7,
+      "rendimiento_promedio": 88,
+      "partidos_jugados": 7,
+      "forma_actual": 90,
+      "atributos_destacados": {
+        "precision_tiro": 94,
+        "velocidad": 85,
+        "fuerza_disparo": 85,
+        "regate": 95,
+        "vision_juego": 95
+      }
+    },
+    "top_jugadores": []
+  },
+  
+  "equipos": {
+    "total_equipos": 32,
+    "equipo_mas_goleador": {
+      "equipo": "Francia",
+      "partidos_jugados": 7,
+      "victorias": 6,
+      "empates": 0,
+      "derrotas": 1,
+      "goles_favor": 18,
+      "goles_contra": 8,
+      "diferencia_goles": 10,
+      "porcentaje_victorias": 85.71,
+      "racha_actual": "N/A"
+    },
+    "mejor_defensa": {
+      "equipo": "Marruecos",
+      "partidos_jugados": 7,
+      "victorias": 5,
+      "empates": 1,
+      "derrotas": 1,
+      "goles_favor": 6,
+      "goles_contra": 3,
+      "diferencia_goles": 3,
+      "porcentaje_victorias": 71.43,
+      "racha_actual": "N/A"
+    },
+    "equipo_mas_victorias": {},
+    "equipos": []
+  },
+  
+  "disciplina": {
+    "total_tarjetas_amarillas": 187,
+    "total_tarjetas_rojas": 4,
+    "promedio_amarillas_partido": 2.92,
+    "promedio_rojas_partido": 0.06,
+    "equipo_mas_indisciplinado": {
+      "equipo": "Uruguay",
+      "amarillas": 15,
+      "rojas": 1
+    },
+    "jugador_mas_amonestado": {
+      "jugador": "Sergio Ramos",
+      "equipo": "España",
+      "amarillas": 3,
+      "rojas": 0
+    }
+  },
+  
+  "partidos_destacados": {
+    "total_partidos": 64,
+    "promedio_goles_partido": 2.69,
+    "partido_mas_goles": {
+      "partido_id": "xyz789",
+      "equipo_local": "España",
+      "equipo_visitante": "Costa Rica",
+      "goles_local": 7,
+      "goles_visitante": 0,
+      "total_goles": 7,
+      "categoria": "más goles",
+      "descripcion": "Partido con 7 goles",
+      "estadio": "Al Thumama Stadium",
+      "ciudad": "Doha"
+    },
+    "partido_mas_asistencia": {},
+    "partidos_destacados": []
+  },
+  
+  "estadios": {
+    "total_estadios": 12,
+    "estadio_mas_partidos": {
+      "estadio": "Lusail Stadium",
+      "ciudad": "Lusail",
+      "partidos_jugados": 10,
+      "total_goles": 32,
+      "promedio_goles": 3.2,
+      "asistencia_total": 850000,
+      "asistencia_promedio": 85000
+    },
+    "estadio_mas_goleador": {
+      "estadio": "Al Thumama Stadium",
+      "ciudad": "Doha",
+      "partidos_jugados": 6,
+      "total_goles": 28,
+      "promedio_goles": 4.67,
+      "asistencia_total": 240000,
+      "asistencia_promedio": 40000
+    },
+    "estadio_mayor_asistencia": {},
+    "estadios": []
+  },
+  
+  "local_visitante": {
+    "total_partidos": 64,
+    "victorias_local": 32,
+    "victorias_visitante": 20,
+    "empates": 12,
+    "porcentaje_local": 50.0,
+    "porcentaje_visitante": 31.25,
+    "porcentaje_empate": 18.75,
+    "goles_local_total": 95,
+    "goles_visitante_total": 77,
+    "promedio_goles_local": 1.48,
+    "promedio_goles_visitante": 1.20,
+    "goles_local_detalle": {
+      "goles_penal": 12,
+      "goles_corner": 18,
+      "goles_jugada_normal": 65,
+      "porcentaje_penal": 12.63,
+      "porcentaje_corner": 18.95,
+      "porcentaje_jugada_normal": 68.42
+    },
+    "goles_visitante_detalle": {
+      "goles_penal": 8,
+      "goles_corner": 14,
+      "goles_jugada_normal": 55,
+      "porcentaje_penal": 10.39,
+      "porcentaje_corner": 18.18,
+      "porcentaje_jugada_normal": 71.43
+    }
+  },
+  
+  "lesiones": {
+    "total_lesiones": 15,
+    "promedio_lesiones_partido": 0.23,
+    "equipo_mas_lesiones": {
+      "equipo": "Brasil",
+      "lesiones": 4
+    },
+    "jugadores_lesionados": [
+      {
+        "jugador": "Neymar Jr",
+        "equipo": "Brasil",
+        "partido_id": "abc456",
+        "minuto": 67,
+        "rival": "Argentina"
+      },
+      {
+        "jugador": "Paul Pogba",
+        "equipo": "Francia",
+        "partido_id": "def789",
+        "minuto": 45,
+        "rival": "Inglaterra"
+      }
+    ]
+  },
+  
+  "arbitros": {
+    "total_arbitros_principal": 20,
+    "total_arbitros_linea": 45,
+    "arbitro_mas_partidos": {
+      "id": "507f1f77bcf86cd799439011",
+      "nombre": "Mateu Lahoz",
+      "pais": "España",
+      "puesto": "Árbitro Principal",
+      "partidos_arbitrados": 5,
+      "amarillas_mostradas": 18,
+      "rojas_mostradas": 1,
+      "promedio_amarillas": 3.6,
+      "promedio_rojas": 0.2
+    },
+    "arbitro_mas_amarillas": {
+      "id": "507f1f77bcf86cd799439012",
+      "nombre": "Szymon Marciniak",
+      "pais": "Polonia",
+      "puesto": "Árbitro Principal",
+      "partidos_arbitrados": 4,
+      "amarillas_mostradas": 22,
+      "rojas_mostradas": 2,
+      "promedio_amarillas": 5.5,
+      "promedio_rojas": 0.5
+    },
+    "arbitro_mas_rojas": {
+      "id": "507f1f77bcf86cd799439013",
+      "nombre": "Daniele Orsato",
+      "pais": "Italia",
+      "puesto": "Árbitro Principal",
+      "partidos_arbitrados": 3,
+      "amarillas_mostradas": 12,
+      "rojas_mostradas": 3,
+      "promedio_amarillas": 4.0,
+      "promedio_rojas": 1.0
+    },
+    "arbitros_principales": [],
+    "estadisticas_arbitros_linea": {
+      "mensaje": "Datos de árbitros de línea no disponibles en el historial actual"
+    }
+  },
+  
+  "partidos_especiales": {
+    "partidos_emocionantes": [
+      {
+        "partido_id": "final123",
+        "equipo_local": "Argentina",
+        "equipo_visitante": "Francia",
+        "marcador": "3-3",
+        "acciones_criticas": 28,
+        "acciones_altas": 45,
+        "total_acciones": 420,
+        "indice_emocion": 151.5,
+        "estadio": "Lusail Stadium"
+      }
+    ],
+    "partidos_aburridos": [
+      {
+        "partido_id": "boring123",
+        "equipo_local": "Dinamarca",
+        "equipo_visitante": "Túnez",
+        "marcador": "0-0",
+        "total_acciones": 180,
+        "total_goles": 0,
+        "indice_aburrimiento": 64.0,
+        "estadio": "Education City Stadium"
+      }
+    ],
+    "partidos_agresivos": [
+      {
+        "partido_id": "aggressive123",
+        "equipo_local": "Uruguay",
+        "equipo_visitante": "Portugal",
+        "marcador": "2-0",
+        "total_faltas": 28,
+        "tarjetas_amarillas": 8,
+        "tarjetas_rojas": 1,
+        "indice_agresividad": 49,
+        "estadio": "Lusail Stadium"
+      }
+    ],
+    "goles_ultimo_minuto": [
+      {
+        "partido_id": "lastmin123",
+        "equipo_local": "Alemania",
+        "equipo_visitante": "Suecia",
+        "equipo_ganador": "Alemania",
+        "marcador_final": "2-1",
+        "marcador_antes_gol": "1-1",
+        "minuto_gol_decisivo": 90,
+        "jugador": "Toni Kroos",
+        "descripcion": "Toni Kroos marcó en el minuto 90 para Alemania (el partido iba 1-1)"
+      },
+      {
+        "partido_id": "lastmin456",
+        "equipo_local": "Inglaterra",
+        "equipo_visitante": "Senegal",
+        "equipo_ganador": "Inglaterra",
+        "marcador_final": "3-2",
+        "marcador_antes_gol": "2-2",
+        "minuto_gol_decisivo": 88,
+        "jugador": "Harry Kane",
+        "descripcion": "Harry Kane marcó en el minuto 88 para Inglaterra (el partido iba 2-2)"
+      }
+    ],
+    "goleadas": [
+      {
+        "partido_id": "goleada1",
+        "equipo_ganador": "España",
+        "equipo_perdedor": "Costa Rica",
+        "marcador": "7-0",
+        "diferencia_goles": 7,
+        "categoria_humillacion": "Humillación épica",
+        "estadio": "Al Thumama Stadium"
+      },
+      {
+        "partido_id": "goleada2",
+        "equipo_ganador": "Portugal",
+        "equipo_perdedor": "Suiza",
+        "marcador": "6-1",
+        "diferencia_goles": 5,
+        "categoria_humillacion": "Humillación épica",
+        "estadio": "Lusail Stadium"
+      },
+      {
+        "partido_id": "goleada3",
+        "equipo_ganador": "Inglaterra",
+        "equipo_perdedor": "Irán",
+        "marcador": "6-2",
+        "diferencia_goles": 4,
+        "categoria_humillacion": "Goleada histórica",
+        "estadio": "Khalifa International Stadium"
+      }
+    ],
+    "partido_menor_asistencia": {
+      "partido_id": "lowatt123",
+      "equipo_local": "Canadá",
+      "equipo_visitante": "Marruecos",
+      "marcador": "1-2",
+      "asistencia": 35000,
+      "estadio": "Al Thumama Stadium"
+    },
+    "partido_mayor_asistencia": {
+      "partido_id": "highatt123",
+      "equipo_local": "Argentina",
+      "equipo_visitante": "Francia",
+      "marcador": "3-3",
+      "asistencia": 88966,
+      "estadio": "Lusail Stadium"
+    }
+  },
+  
+  "fecha_generacion": "2025-12-13T14:30:00.123456",
+  "mensaje": "Estadísticas completas del torneo generadas exitosamente"
+}
