@@ -71,8 +71,8 @@ def get_ciudad_detalle(id, logger):
             logger.info(f"Coleccionable para el usuario {id} no encontrado. Creando nuevo coleccionable.")
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Ciudad no encontrada")
         
-        ciudad['pais'] = db['paises'].find_one({'id': ciudad['pais_id']})['nombre']
-        ciudad['partidos'] = list(db['historial'].find({"ubicacion.id": ciudad['id']}))
+        ciudad['pais'] = db['paises'].find_one({'id': ciudad['pais_id']})['nombre']        
+        ciudad['partidos'] = list(db['historial'].find({"ubicacion.ciudad": ciudad['nombre'], "ubicacion.pais": ciudad['pais']}))
         ciudad = estadistica_util.convertir_objectid_a_string(ciudad)
         
         return ciudad              
