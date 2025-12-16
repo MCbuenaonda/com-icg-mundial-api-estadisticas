@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, Dict, List
 
 class Jugador(BaseModel):
     id: Optional[int]
@@ -54,3 +54,71 @@ class Jugador(BaseModel):
     
     # ========== HISTORIAL DE BONIFICACIONES ==========
     bonificaciones: Optional[list] = Field(default_factory=list)  # Lista de logros especiales
+
+
+# ========== MODELOS PARA RESPUESTA ENRIQUECIDA ==========
+
+class PerfilGeneral(BaseModel):
+    nombre: str
+    posicion: str
+    pie_habil: str
+    numero: int
+    equipo_pais: str
+    titular: bool
+
+class AtributosFisicosTecnicos(BaseModel):
+    fisico: float
+    tecnico: float
+    lista_completa: Dict[str, int]
+
+class EstadoActual(BaseModel):
+    rendimiento: int
+    forma_actual: int
+    moral: int
+    bonificaciones: List[str]
+
+class HistorialTemporada(BaseModel):
+    goles_totales: int
+    asistencias: int
+    faltas_acumuladas: int
+    lesiones_total: int
+
+class DatosDescriptivos(BaseModel):
+    perfil_general: PerfilGeneral
+    atributos_fisicos_tecnicos: AtributosFisicosTecnicos
+    estado_actual: EstadoActual
+    historial_temporada: HistorialTemporada
+
+class ProbabilidadesPredictivas(BaseModel):
+    exito_pases: float
+    precision_tiros: float
+    exito_regates: float
+    recuperaciones: float
+    fatiga_desgaste: float
+    faltas_cometidas: float
+    contribucion_gol: float
+
+class PrecisionBajoPresion(BaseModel):
+    medio_central: float
+    defensivo: float
+    ofensivo: float
+
+class EstadisticasAnaliticas(BaseModel):
+    tasa_posesion_individual: float
+    pases_clave: int
+    precision_bajo_presion: PrecisionBajoPresion
+    duelos_aereos_ganados: float
+    indice_creacion: float
+    eficiencia_defensiva: float
+    mapa_calor: Dict[str, float]
+    impacto_resultado: float
+    tendencia_forma: float
+
+class JugadorDetalleResponse(BaseModel):
+    """Modelo extendido de respuesta para el endpoint de detalle de jugador"""
+    # Datos básicos del jugador (incluye todos los campos originales como dict)
+    jugador_base: Dict
+    # Nuevas secciones analíticas
+    datos_descriptivos: DatosDescriptivos
+    probabilidades_predictivas: ProbabilidadesPredictivas
+    estadisticas_analiticas: EstadisticasAnaliticas

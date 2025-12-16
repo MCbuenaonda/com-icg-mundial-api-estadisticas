@@ -25,6 +25,15 @@ def get_pais_route(id: str):
 @route.get("/jugador/{id}", tags=[tag])
 def get_jugador_route(id: str):
     try:
+        respuesta = estadistica_service.get_jugador_basic(id, logger)        
+        return respuesta
+    except Exception as e:
+        logger.error(f"Error al obtener estadisticas: {str(e)}")
+        raise HTTPException(status_code=409, detail=f"Error al obtener estadisticas: {str(e)}")
+    
+@route.get("/jugador-detail/{id}", tags=[tag])
+def get_jugador_detail_route(id: str):
+    try:
         respuesta = estadistica_service.get_jugador_detalle(id, logger)        
         return respuesta
     except Exception as e:
