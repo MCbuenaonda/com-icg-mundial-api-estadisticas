@@ -34,6 +34,7 @@ def analizar_remontadas(historial: List[Dict], logger) -> Dict:
     
     for partido in historial:
         try:
+            juego = db['juegos'].find_one({"_id": ObjectId(partido.get('partido_original_id'))})
             acciones = partido.get('acciones', [])
             goles_local = 0
             goles_visitante = 0
@@ -88,7 +89,8 @@ def analizar_remontadas(historial: List[Dict], logger) -> Dict:
                     "marcador_inicial": f"Perdía por {diferencia_remontada} goles",
                     "marcador_final": f"{partido.get('goles_local')}-{partido.get('goles_visitante')}",
                     "estadio": ubicacion.get('estadio', 'N/A'),
-                    "ciudad": ubicacion.get('ciudad', 'N/A')
+                    "ciudad": ubicacion.get('ciudad', 'N/A'),
+                    "fecha": juego.get('fecha', 'N/A')
                 }
                 estadisticas_remontadas["partidos"].append(partido_remontada)
         
